@@ -1,0 +1,70 @@
+.subscribe-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.subscribe-cards-container-m {
+    @include media(m) {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;           
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card-container-l {
+    @include media(l) {
+        height: 580px;
+     }
+}
+
+.w-mob280-desk350 {
+    width: 280px;
+    @include media(l) {
+        width: 350px;
+    }
+}
+
+.subsribe-description-holster {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 15px;
+    width: 240px;
+    align-items: center;
+}
+
+.subsribe-description-holster-l {
+    @include media(l) {
+        margin-bottom: 65px;
+        height: 230px;
+        width: 300px;
+    }
+}
+
+.subsribe-description {
+    text-transform: none;
+    font-size: 11px;
+}
+
+.bg-free {
+    background-image: url("../images/subscribe_1.png");
+}
+
+.bg-standart {
+    background-image: url("../images/subscribe_2.png");
+}
+
+.bg-premium {
+    background-image: url("../images/subscribe_3.png");
+}

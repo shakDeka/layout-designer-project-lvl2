@@ -1,0 +1,23 @@
+.musician-container {
+    max-width: 600px;
+    min-height: 300px;
+}
+
+.musian-buttons-container {
+    margin-top: 40px;
+    min-height: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.h-mob20-desk16 {
+    height: 20px;
+    @include media(ml) {
+        height: 16px;
+    }
+}
+
+.ml15 {
+    margin-left: 15px;
+}

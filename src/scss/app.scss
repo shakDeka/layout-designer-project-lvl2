@@ -1,0 +1,153 @@
+@import "variables";
+@import "fonts";
+@import "buttons";
+@import "header";
+@import "1.1.mainpageaccess";
+@import "1.2.subscribe";
+@import "1.3.latestnews";
+@import "1.4.mobileapplication";
+@import "2.1.musicianpreview";
+@import "2.2.populartracks";
+@import "2.3.diskography";
+@import "2.4.similiarartists";
+@import "footer";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $palette-background-primary;
+    font-family: $font--famaly-primary;
+    color: $palette-text-primary;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: auto;
+    @include max-media(s) {
+        padding: 10px;
+    }
+    @include media(s) {
+        width: 280px;
+    }
+    @include media(xs) {
+        width: 330px;
+    }
+    @include media(ms) {
+        width: 410px;
+    }
+    @include media(xm) {
+        width: 500px;
+    }
+    @include media(m) {
+        width: 672px;
+    }
+    @include media(ml) {
+        width: 1000px;
+    }
+    @include media(l) {
+        width: 1200px;
+    }
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.pt250 {
+    padding-top: 250px;
+}
+
+.pb250 {
+    padding-bottom: 250px;
+}
+
+.mt100 {
+   margin-top: 100px;
+}
+
+.mb100 {
+    margin-bottom: 100px;
+}
+
+.mt80 {
+    margin-top: 80px;
+}
+
+.pt80 {
+    padding-top: 80px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.pt25 {
+    padding-top: 25px; 
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.pb80 {
+    padding-bottom: 80px;
+}
+
+.p-m-0 {
+    padding: 0;
+    margin: 0;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.p-l-r40 {
+    @include media(ml) {
+        padding: 0 40px;
+    }
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.bg-layout-cover-norepeat-position-center {
+    background-position: center;
+    background-size: cover;
+} 
+
+.bg-main-page {
+    background-image: url("../images/banner.png");
+}
+
+.bg-morten-harket {
+    background-image: url("../images/Morten Harket.png");
+    @include max-media(s) {
+        background-position: 75%;
+    }
+    @include max-media(xs) {
+        background-position: 70%;
+    }
+    @include max-media(ms) {
+        background-position: 65%;
+    }
+    @include max-media(ml) {
+        background-position: 70%;
+    }
+}
+
+.txt-center {
+    text-align: center;
+}
