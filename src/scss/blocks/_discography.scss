@@ -1,58 +1,54 @@
 .track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.8px;
+  line-height: 19.2px;
+
+  &__cover {
+    width: 55px;
+    height: 55px;
+    margin-right: 16px;
+  }
+
+  &__info {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    font-size: 12.8px;
-    line-height: 19.2px;
-  
-    &__cover {
-      width: 55px;
-      height: 55px;
-      margin-right: 16px;
-    }
-  
-    &__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    &__title {
-      color: $white;
-      font-weight: bold;
-      text-transform: uppercase;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.album {
+  &__title {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+  }
+
+  &__year {
+    color: $gray;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+
+    @media (max-width: 767px) {
+      max-width: 137px;
+      max-height: 137px;
     }
   }
-  
-  .album {
-    &__title {
-      margin-top: 18px;
-  
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 27px;
-  
-      letter-spacing: -1px;
-  
-      text-transform: capitalize;
-    }
-  
-    &__year {
-      color: $gray;
-      font-size: 18px;
-      line-height: 24px;
-    }
-  
-    &__image {
-      display: block;
-      width: 100%;
-      max-width: 250px;
-      max-height: 250px;
-  
-      @media (max-width: 767px) {
-        max-width: 137px;
-        max-height: 137px;
-      }
-    }
-  }
+}

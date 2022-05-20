@@ -1,81 +1,72 @@
 .header {
-    position: absolute;
-  
-    top: 25px;
-    right: 0;
-    left: 0;
-  
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-  
-      @media (max-width: 1023px) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  
-    &__main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  
-      column-gap: 90px;
-  
-      @media (max-width: 1023px) {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  
-    &__logo {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    &__menu {
-      display: flex;
-  
-      column-gap: 24px;
-  
-      a {
-        color: $dark-gray;
-        font-size: 11px;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-  
-      @media (max-width: 1023px) {
-        flex-direction: column;
-  
-        margin: 10px 0 18px 0;
-      }
-    }
-  
-    &__search {
-      width: 250px;
-      height: 25px;
-  
-      padding: 5px 10px;
-      border-style: none;
-      border-radius: 50px;
-  
-      color: $white;
-  
-      text-transform: uppercase;
-  
-      background: $dark;
-  
-      outline: none;
-  
-      @media (max-width: 1023px) {
-        justify-content: flex-start;
-      }
-  
-      @media (max-width: 767px) {
-        width: 100%;
-      }
+  position: absolute;
+  top: 25px;
+  right: 0;
+  left: 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 90px;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 24px;
+
+    a {
+      color: $dark-gray;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      margin: 10px 0 18px;
+    }
+  }
+
+  &__search {
+    width: 250px;
+    height: 25px;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 50px;
+    color: $white;
+    text-transform: uppercase;
+    background: $dark;
+    outline: none;
+
+    @media (max-width: 1023px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}

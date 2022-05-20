@@ -1,25 +1,25 @@
 .track-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, minmax(200px, 550px));
-    justify-content: start;
-  
-    column-gap: 50px;
-    row-gap: 25px;
-  
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(200px, 550px));
+  justify-content: start;
+
+  column-gap: 50px;
+  row-gap: 25px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
   }
-  
-  .grid-discography {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-  
-    column-gap: 50px;
-    row-gap: 25px;
-  
-    @media (max-width: 767px) {
-      grid-template-columns: repeat(auto-fit, 137px);
-    }
+}
+
+.grid-discography {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+
+  column-gap: 50px;
+  row-gap: 25px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, 137px);
   }
+}

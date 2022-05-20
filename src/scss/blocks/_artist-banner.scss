@@ -1,69 +1,70 @@
-  .artist-bg {
-    background-image: url("../images/MortenHarket.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.artist-bg {
+  background-image: url("../images/MortenHarket.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-name {
+  margin-top: 50px;
+  margin-bottom: 16px;
+
+  @media (max-width: 767px) {
+
+    margin-top: 25px;
   }
-  
-  .artist-name {
-    margin-top: 50px;
-    margin-bottom: 16px;
-  
-    @media (max-width: 767px) {
-      margin-top: 25px;
-    }
-  }
-  
-  .artist-btn {
-    display: flex;
-  
-    gap: 20px;
-    align-items: center;
-  
-    width: 200px;
-    height: 62px;
-    padding: 20px 30px;
-  
-    border: none;
-    border-radius: 5px;
-  
-    color: $white;
-  
-    font-size: 12.8px;
-  
-    text-transform: uppercase;
-  }
-  
-  .play-btn {
+}
+
+.artist-btn {
+  display: flex;
+
+  gap: 20px;
+  align-items: center;
+
+  width: 200px;
+  height: 62px;
+  padding: 20px 30px;
+
+  border: none;
+  border-radius: 5px;
+
+  color: $white;
+
+  font-size: 12.8px;
+
+  text-transform: uppercase;
+}
+
+.play-btn {
+  position: relative;
+
+  background-color: $purple;
+
+  &::before {
     position: relative;
-  
-    background-color: $purple;
-  
-    &::before {
-      position: relative;
-  
-      width: 20px;
-      height: 20px;
-  
-      background-image: url(../images/play-button.svg);
-  
-      content: "";
-    }
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../images/play-button.svg");
+
+    content: "";
   }
-  
-  .like-btn {
+}
+
+.like-btn {
+  position: relative;
+
+  background-color: $red;
+
+  &::before {
     position: relative;
-  
-    background-color: $red;
-  
-    &::before {
-      position: relative;
-  
-      width: 20px;
-      height: 20px;
-  
-      background-image: url(../images/heart.svg);
-  
-      content: "";
-    }
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../images/heart.svg");
+
+    content: "";
   }
+}
